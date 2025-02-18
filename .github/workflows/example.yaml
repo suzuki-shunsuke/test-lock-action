@@ -39,7 +39,7 @@ jobs:
         id: lock
         with:
           mode: ${{inputs.action}}
-          history: "none"
+          remove_key_when_unlock: "true"
           key: ${{inputs.key}}
           message: ${{inputs.message}}
           ignore_already_locked_error: "true"
